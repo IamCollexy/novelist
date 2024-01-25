@@ -1,0 +1,1215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+    <title>Charles C</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Mr+De+Haviland&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Schibsted+Grotesk:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mr+De+Haviland&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Schibsted+Grotesk:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Mr+De+Haviland&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Schibsted+Grotesk:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .nav-link {
+        letter-spacing: 0.11em;
+        /* padding: 8px 9px; */
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1.4;
+        text-transform: uppercase;
+      }
+
+      /* Custom styles for the navbar */
+      .navbar-brand {
+        font-family: 'Mr De Haviland', cursive;
+        font-weight: 500;
+        font-size: 42px;
+        color: #0a0a0a !important;
+      }
+
+      .navbar {
+        position: fixed;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1000;
+        background-color: transparent; /* Set the background color of the navbar to transparent */
+      }
+      .nav-linkz {
+        justify-content: end;
+        margin-right: 30px;
+      }
+      .writer-page-box {
+        height: 100vh;
+        background-image: url('/charlesC/Images/novelistImg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+      .writer-skills-section {
+        background-color: #000;
+        margin-top: 100px;
+      }
+      .writer-skills-box {
+        width: 90%;
+        margin: auto;
+        padding: 50px;
+      }
+      .joinUs {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        margin: auto;
+        padding: 50px;
+      }
+
+      .skills-title > p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 42px;
+        font-weight: 270;
+      }
+      .skills {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
+      .skills-box {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+      }
+      .skills > li {
+        color: white;
+        text-transform: capitalize;
+        font-family: Caveat, cursive;
+        font-weight: 400;
+        font-size: 42px;
+        line-height: 1em;
+      }
+
+      .joinus-cta {
+        width: 90%;
+      }
+      .joinus-cta > p {
+        color: #0a0a0a;
+        margin-top: 20px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.6;
+        font-style: normal;
+        padding: 0;
+        word-wrap: break-word;
+      }
+      .joinus-cta > h2 {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+      }
+      .b {
+        color: #000;
+      }
+
+      .joinus-laptop {
+        width: 300px;
+        height: 250px;
+      }
+      .free2join {
+        color: red;
+        font-weight: bold;
+        font-size: 16px;
+        margin-top: 10px;
+      }
+      .events {
+        background-image: url('/charlesC/Images/writters.png');
+        position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+      }
+
+      .event-image {
+        height: 200px;
+        width: 345px;
+        border-radius: 5px;
+      }
+      .img-quote > p {
+        display: none;
+      }
+      .podcast {
+        background-color: #000;
+      }
+      .podcast-content {
+        width: 50%;
+        margin: auto;
+      }
+      .podcast-content > p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 42px;
+        font-weight: 270;
+        color: 'white';
+      }
+      .img-quote {
+        position: relative;
+      }
+      .podcast-content > br {
+        display: none;
+      }
+
+      .prom > b {
+        font-weight: 600;
+        font-size: 50px;
+      }
+      .ad-text > p {
+        color: white;
+        text-transform: capitalize;
+        font-family: Caveat, cursive;
+        font-weight: 400;
+        font-size: 42px;
+        line-height: 1em;
+      }
+      .full-card-box {
+        width: 90%;
+        margin: auto;
+      }
+      .handles {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .social-handles {
+        display: 'flex';
+        flex-direction: 'column';
+        align-items: center;
+        justify-content: center;
+      }
+      .social-logos {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 200px;
+      }
+      .view-us > h3 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 30px;
+        font-weight: 300;
+      }
+      .view-us > p {
+        margin-top: 20px;
+      }
+      .yellow-btn {
+        margin: 8px auto;
+        text-transform: uppercase !important;
+        font-size: 22px !important;
+        line-height: 24px !important;
+        font-weight: bold;
+        padding: 18px 35px !important;
+        background-color: #e7b343;
+        color: white;
+        border: 1px solid #e7b343;
+        border-radius: 4px;
+      }
+      .novel-1 {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 20px;
+      }
+      .clients > p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 42px;
+        margin: 20px auto;
+      }
+
+      .client-span {
+        font-weight: 600;
+      }
+      .client-photo > img {
+        width: 100%;
+        border-radius: 100%;
+        height: 250px;
+      }
+      .client-testimony {
+        font-family: Helvetica, Verdana, Arial, sans-serif;
+        font-weight: 300;
+        font-style: italic;
+        color: #888;
+      }
+      .award-cert {
+        width: 80%;
+        margin: auto;
+      }
+      .award-cert > p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 42px;
+        margin: 20px auto;
+      }
+      .cert {
+        height: 300px;
+        background-image: url('/charlesC/Images/certified.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+
+      .servize {
+        display: flex;
+        width: 100%;
+      }
+      .servize > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 20%;
+        height: auto;
+      }
+      .business-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+        color: #fff;
+        height: 100%;
+      }
+      .s1 {
+        background-color: #f3bf4f;
+      }
+      .s2 {
+        background-color: #3f9ee0;
+      }
+      .s3 {
+        background-color: #ae5ad3;
+      }
+      .s4 {
+        background-color: #fd5d5d;
+      }
+      .s5 {
+        background-color: #0fb19a;
+      }
+      .bis-h {
+        font-family: Helvetica, Verdana, Arial, sans-serif;
+        height: 20%;
+      }
+      .bis-p {
+        font-family: Helvetica, Verdana, Arial, sans-serif;
+        height: 60%;
+      }
+      .biz-btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 20%;
+      }
+
+      .biz-btn > button {
+        background-color: #000;
+        border-radius: 4px;
+        color: #fff;
+        padding: 8px 20px;
+        border: 1px solid #000;
+        height: 40px;
+      }
+      .writer-quote {
+        background-color: #000;
+        color: #fff;
+
+        margin: auto;
+        padding: 100px 50px;
+      }
+      .quote-box {
+        width: 800px;
+        margin: auto;
+        text-align: center;
+        padding: 80px 50px;
+        border-top: 1px solid #fff;
+        border-left: 1px solid #fff;
+        border-right: 1px solid #fff;
+      }
+      .quote-box > h4 {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: normal;
+        text-transform: none;
+        font-style: italic;
+        line-height: 1.4;
+        letter-spacing: 0px;
+      }
+      .writer-quote > h5 {
+        font-size: 20px;
+        letter-spacing: 3px;
+        text-align: center;
+        font-weight: 400;
+        margin-top: -30px;
+      }
+      .footer-main-box {
+        background-color: #111111;
+        width: 100%;
+      }
+      .footer-box {
+        color: #fff;
+        margin: auto;
+        width: 80%;
+        padding-top: 10px;
+      }
+      .footer-content-1 {
+        width: 25%;
+        font-size: 12px;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+      }
+      .footer-content-2 {
+        width: 25%;
+        font-size: 12px;
+      }
+      @media (min-width: 768px) {
+        .navbar {
+          width: 75%;
+          height: 90px; /* Adjusted width for md and larger screens */
+        }
+      }
+      @media (min-width: 1200px) {
+        .writer-skills-box {
+          width: 70%;
+          margin: auto;
+          padding: 50px;
+        }
+        .joinUs {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 70%;
+          margin: auto;
+          padding: 50px;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .nav-link {
+          letter-spacing: 0.11em;
+          padding: 15px 9px;
+          font-family: 'Roboto', sans-serif;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 1.4;
+          text-transform: uppercase;
+        }
+        .writer-skills-box {
+          min-width: 100%;
+          margin: auto;
+          padding: 50px;
+        }
+        .skills-box {
+          display: flex;
+          justify-content: center;
+          max-width: 100%;
+        }
+        .skills,
+        .collab {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          max-width: 250px;
+        }
+        .joinUs {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+          padding: 50px 10px;
+        }
+        .img-quote > p {
+          position: absolute;
+          bottom: 0;
+          top: auto;
+          color: aliceblue;
+          z-index: 2;
+          display: block;
+        }
+        .event-image {
+          opacity: 0.9;
+          z-index: 1;
+        }
+        .events {
+          height: 400px;
+        }
+        .events-content > button {
+          margin: 40px auto;
+        }
+        .podcast-content > br {
+          display: block;
+        }
+        .award-cert {
+          width: 100%;
+          margin: auto;
+        }
+        .servize {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+        }
+        .servize > div {
+          width: 100%;
+        }
+        .business-card {
+          height: 500px;
+        }
+        .quote-box {
+          width: 100%;
+        }
+        .forbes-coach-img > img {
+          width: 100%;
+        }
+        .footer-content-1 {
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+        }
+        .writer-quote {
+          padding: 100px 20px;
+        }
+        .quote-box {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bg-white">
+      <div class="nav-bar-container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+          <a class="navbar-brand" href="#">Charles C</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse nav-linkz"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">ABOUT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">LIVE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">WORK WITH ADAM</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">ONLINE TRAINING</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">MEDIA</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">PODCAST</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">RESULTS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">CONNECT</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="writer-page-box"></div>
+    <div class="bg-white">
+      <div class="writer-skills-section">
+        <div class="writer-skills-box">
+          <div class="skills-title">
+            <p class="text-center text-white">CHARLES <b>C</b></p>
+          </div>
+          <div class="skills-box">
+            <ul class="skills">
+              <li>Writer</li>
+              <li>Author</li>
+              <li>Blogger</li>
+              <li>Poet</li>
+              <li>Creative Writing</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="joinUs">
+        <div class="joinus-cta">
+          <h2>JOIN OUR WRITING COMMUNITY</h2>
+          <p>
+            Become A Member Of Our Exclusive Network
+            <b class="b">Big Writers Entrepreneurs -</b> Access Free
+            Training and Resources Designed To Help Entrepreneurs
+            Start, Grow, and Scale Their Writing.
+          </p>
+          <button class="yellow-btn">BECOME A MEMBER</button>
+          <div class="free2join">
+            <p>Free to Join</p>
+          </div>
+        </div>
+        <div>
+          <img
+            src="/charlesC/Images/joinus.png"
+            class="joinus-laptop"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="events">
+      <div class="events-content">
+        <div class="img-quote">
+          <p style="text-align: center">
+            <strong
+              >'SOCIAL MEDIA MONETISATION UNLOCKED' AND 'PERSONAL
+              BRAND UNLOCKED' - </strong
+            ><strong>FREE EVENTS IN AUGUST AND SEPTEMBER</strong>
+          </p>
+          <img
+            src="/charlesC/Images/eventsec.jpg"
+            class="event-image"
+          />
+        </div>
+        <button class="yellow-btn">CLICK TO FIND OUT MORE</button>
+      </div>
+    </div>
+    <div class="podcast py-5">
+      <div class="podcast-content py-2">
+        <p class="text-center text-white">CHARLES C</p>
+        <br />
+        <p class="prom text-center text-white">
+          <b> WRITERS GROWTH SECRETS PODCAST</b>
+        </p>
+        <div class="ad-text text-center">
+          <p>
+            More than 300 episodes and hundreds of hours of Writing
+            advice
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="mt-4">
+      <div class="row full-card-box">
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+          <div class="card">
+            <img
+              src="/charlesC/Images/cards-img.jpg"
+              class="card-img-top"
+              alt="Episode Image"
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                EPISODE 330: FIVE STEPS TO MAKE £10,000 PER MONTH
+                QUICKLY
+              </h5>
+              <p class="card-text">
+                By Adam Stott | January 17, 2024
+              </p>
+              <p class="card-text">
+                In this episode, Adam Stott shares his five-step
+                process for making £10,000...
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+          <div class="card">
+            <img
+              src="/charlesC/Images/cards-img.jpg"
+              class="card-img-top"
+              alt="Episode Image"
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                EPISODE 331: BUILDING A SUCCESSFUL ONLINE BUSINESS
+              </h5>
+              <p class="card-text">By John Doe | January 18, 2024</p>
+              <p class="card-text">
+                Learn the key strategies to build a successful online
+                business from scratch.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+          <div class="card">
+            <img
+              src="/charlesC/Images/cards-img.jpg"
+              class="card-img-top"
+              alt="Episode Image"
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                EPISODE 332: MASTERING THE ART OF WRITING
+              </h5>
+              <p class="card-text">
+                By Jane Smith | January 19, 2024
+              </p>
+              <p class="card-text">
+                Explore the secrets and techniques to master the art
+                of writing.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+          <div class="card">
+            <img
+              src="/charlesC/Images/cards-img.jpg"
+              class="card-img-top"
+              alt="Episode Image"
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                EPISODE 333: ENTREPRENEURIAL MINDSET HACKS
+              </h5>
+              <p class="card-text">
+                By Sarah Johnson | January 20, 2024
+              </p>
+              <p class="card-text">
+                Discover mindset hacks to boost your entrepreneurial
+                journey.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+          <div class="card">
+            <img
+              src="/charlesC/Images/cards-img.jpg"
+              class="card-img-top"
+              alt="Episode Image"
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                EPISODE 334: THE ART OF STORYTELLING
+              </h5>
+              <p class="card-text">
+                By Michael Brown | January 21, 2024
+              </p>
+              <p class="card-text">
+                Unleash the power of storytelling to captivate your
+                audience.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+          <div class="card">
+            <img
+              src="/charlesC/Images/cards-img.jpg"
+              class="card-img-top"
+              alt="Episode Image"
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                EPISODE 335: STRATEGIES FOR CREATIVE THINKING
+              </h5>
+              <p class="card-text">
+                By Alex Turner | January 22, 2024
+              </p>
+              <p class="card-text">
+                Unlock your creative potential with proven thinking
+                strategies.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+          <div class="card">
+            <div class="social-handles">
+              <div class="social-logos">
+                <img src="/charlesC/Images/facebook.png" />
+              </div>
+              <h1 class="text-center text-bold">400K</h1>
+              <div class="text-center">
+                <p>LIKES ACCROSS ALL PAGES</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+          <div class="card">
+            <div class="social-handles">
+              <div class="social-logos">
+                <img src="/charlesC/Images/instagram.jpg" />
+              </div>
+              <h1 class="text-center text-bold">300K</h1>
+              <div class="text-center">
+                <p>FOLLOWERS</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+          <div class="card">
+            <div class="social-handles">
+              <div class="social-logos">
+                <img src="/charlesC/Images/YouTube.png" />
+              </div>
+              <h1 class="text-center text-bold">1M</h1>
+              <div class="text-center">
+                <p>VIEWS</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+          <div class="card">
+            <div class="social-handles">
+              <div class="social-logos">
+                <img src="/charlesC/Images/tiktok.png" />
+              </div>
+              <h1 class="text-center text-bold">70K</h1>
+              <div class="text-center">
+                <p>FOLLOWERS</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-12 col-6 view-us">
+          <h3 class="text-center">
+            CHARLES C ON CHANNEL 3 TV 'GOOD WRITING, BAD WRITING'
+          </h3>
+          <p>
+            Charles C recently featured on the hit Channel 3 TV
+            program 'Good writing, Bad Writing' where he swapped his
+            life in leafy Essex with London-based Mum of 3 Kiptieu
+            Sheriff.
+          </p>
+          <p>
+            Kiptieu fled war-torn Sierra Leonne to move to London
+            where she dreams of turning her passion for cooking into
+            an African Cuisine takeaway business.
+          </p>
+          <p>
+            Read the episode to see how Adam pledged his time and
+            support after learning of Kiptieu's ambitions and
+            witnessing her drive and determination to make the
+            business work whilst raising her three girls and juggling
+            charitable commitments.
+          </p>
+
+          <p>
+            You can follow what happened after the show on the Charles
+            C YouTube channel.
+          </p>
+          <button class="yellow-btn">WATCH THE EPISODES NOW!</button>
+        </div>
+        <div
+          class="col-6 novel-1"
+          style="
+            background-image: url('/charlesC/Images/novel-1.jpg');
+          "
+        ></div>
+      </div>
+    </div>
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-12 col-6 view-us">
+          <h3 class="text-center">
+            FEATURING ON 'GOOD WRITING, BAD WRITING CHANGED MY LIFE'
+          </h3>
+          <p>
+            On 3rd October 2021, Channel 5 revisited Adam and Kiptieu
+            to find out what had happened since the show. Following a
+            recap of the initial episode shot in early 2021, the show
+            focused on the progress of Kiptieus African Food business
+            'Bongo's Kitchen' and how, with Adam's help, her life had
+            changed since meeting him.
+          </p>
+          <p>
+            At the time of filming the first episode, Kiptieu was
+            running the business from her small flat in London which
+            she shared with her three children. Since pledging his
+            support Adam and his team have taken an active role in the
+            business - Kiptieu now has a new professional, a new
+            website and has even taken on new staff to help her manage
+            the food orders. On Top of this, you can now order
+            delicious food through JustEat.
+          </p>
+
+          <p>You can watch the full 'revisit' episode below.</p>
+          <button class="yellow-btn">
+            WATCH THE REVISIT EPISODES NOW!
+          </button>
+        </div>
+        <div
+          class="col-6 novel-1"
+          style="background-image: url('/charlesC/Images/writer.jpg')"
+        ></div>
+      </div>
+    </div>
+
+    <div class="container my-5 clients">
+      <p class="text-center">
+        CLIENT <span class="client-span">SUCCESS</span>
+      </p>
+      <div class="row mt-5">
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+          <div class="client-card">
+            <div class="client-handles px-2">
+              <div class="client-photo">
+                <img src="/charlesC/Images/person1.jpg" />
+              </div>
+              <p class="text-center text-bold">
+                <strong>Aliyah Kahn - Restore Skin & Health</strong>
+              </p>
+              <div class="text-center client-testimony">
+                <p>
+                  "I'm hitting the 10K month goal now, which was my
+                  original goal. It's the first time ever I've earned
+                  that level of money. It's been really life-changing
+                  for me, simple but powerful. Honestly, second to
+                  none, Go big or go home!"
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+          <div class="client-card">
+            <div class="client-handles px-2">
+              <div class="client-photo">
+                <img src="/charlesC/Images/person2.webp" />
+              </div>
+              <p class="text-center text-bold">
+                <strong
+                  >Stephen Pitcher - St James Place Wealth
+                  Management</strong
+                >
+              </p>
+              <div class="text-center client-testimony">
+                <p>
+                  "I had some tremendous breakthroughs, and I was able
+                  to relate more to clients. I had much more
+                  meaningful conversations. I understood their
+                  problems far more and it resulted in an awful lot
+                  more business."
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+          <div class="client-card">
+            <div class="client-handles px-2">
+              <div class="client-photo">
+                <img src="/charlesC/Images/person4.jpg" />
+              </div>
+              <p class="text-center text-bold">
+                <strong
+                  >Sarah Willingham - Dragons Den Investor</strong
+                >
+              </p>
+              <div class="text-center client-testimony">
+                <p>
+                  "I can't tell you how much of an inspiring morning
+                  I've had meeting all these fantastic, energised,
+                  passionate brilliant people with their start-ups and
+                  their small business, Adam has got together a great
+                  group of people and you can see them taking it all
+                  in, they have learned so much after the past few
+                  days, I feel really privileged to have been part of
+                  this journey so thank you I loved every single
+                  minute of it."
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+          <div class="client-card">
+            <div class="client-handles px-2">
+              <div class="client-photo">
+                <img src="/charlesC/Images/person5.jpg" />
+              </div>
+              <p class="text-center text-bold">
+                <strong
+                  >Marky Kwaku - Adiwam Success Solutions</strong
+                >
+              </p>
+              <div class="text-center client-testimony">
+                <p>
+                  "It's a way that it's changed my attitude towards
+                  seeing investment and seeing success and how it can
+                  really impact yourself as a business owner. It's
+                  next level! Adam just changes the way that you see
+                  business. The steps, the pillars, the stages, the
+                  impact of knowing the strategy and understanding the
+                  strategy. That in itself is a game-changing
+                  mindset."
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center">
+        <button class="yellow-btn">
+          READ MORE CHARLES C REVIEWS HERE
+        </button>
+      </div>
+    </div>
+
+    <div class="writer-skills-section">
+      <div class="writer-skills-box">
+        <div class="skills-title">
+          <p class="text-center text-white">
+            WORK <b>WITH CHARLES</b>
+          </p>
+        </div>
+        <div class="skills-box">
+          <ul class="skills">
+            <li>Creative Writing</li>
+            <li>Author</li>
+            <li>Blogger</li>
+            <li>Key Note</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container my-5">
+      <div class="text-center award-cert">
+        <p>
+          AWARD WINNING AND RECOGNISED
+          <b>ENTREPRENEUR AND WRITING COACH</b>
+        </p>
+        <div class="cert"></div>
+      </div>
+    </div>
+    <div class="my-5 all-services">
+      <div class="servize">
+        <div class="border">
+          <div class="business-card s1">
+            <div></div>
+            <h3 class="text-center my-3">
+              <strong>BIG BUSINESS</strong><br />
+              <span>EVENTS</span>
+            </h3>
+            <div class="bus-p">
+              <p>
+                For many years, people have been talking about Adam's
+                company Big Business Events and for great reasons!
+                Don't let the name fool you...big business has nothing
+                to do with the size of your business, we're focused on
+                <strong> BIG BUSINESS RESULTS!</strong> Adam has been
+                hosting unique training events for our community
+                members and free training events for business owners
+                with results for the attendees that are off the
+                charts! If you haven't been to any of our events yet,
+                you better get to one soon!
+              </p>
+            </div>
+            <div class="text-white biz-btn">
+              <button>LEARN MORE</button>
+            </div>
+          </div>
+        </div>
+        <div class="border">
+          <div class="business-card s2">
+            <div></div>
+            <h3 class="text-center my-3">
+              <strong> ONLINE BUSINESS </strong><br />
+              <span>PROGRAMS</span>
+            </h3>
+            <div class="bis-p">
+              <p>
+                Join one of Adam's comprehensive and immersive
+                online-only business programs and learn breakthrough
+                strategies for your business from the comfort of your
+                own home. Discover Adams 40 Rules for Business
+                Success, the 30/30 Wealth System, The 14 Day Video
+                Challenge, Instagram Secrets, Social Media Secrets,
+                The Social Media Duplication System, and much more.
+              </p>
+            </div>
+            <div class="text-white biz-btn">
+              <button>LEARN MORE</button>
+            </div>
+          </div>
+        </div>
+        <div class="border">
+          <div class="business-card s3">
+            <div></div>
+            <h3 class="text-center my-3">
+              <strong>WRITING</strong><br />
+              <span>PROGRAMS</span>
+            </h3>
+            <div class="bis-p">
+              <p>
+                Have you ever told yourself you would do whatever it
+                takes to create your success and achieve your dreams?
+                Adam's business coaching programs will ensure you
+                accomplish your dreams, no matter how big or small
+                they are. To be coached by someone who's already done
+                it, have them show you how they did it or, more
+                importantly, how they have done it for others just
+                like you is invaluable to proactive, ambitious
+                business owners. Adam's unique, customised approach to
+                coaching will put you in the drivers seat to create
+                the business you deserve.
+              </p>
+            </div>
+            <div class="text-white biz-btn">
+              <button>LEARN MORE</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="border">
+          <div class="business-card s4">
+            <div></div>
+            <h3 class="text-center my-3">
+              <strong>WRITING GROWTH</strong><br />
+              <span>SECRET</span>
+            </h3>
+            <div class="bis-p">
+              <p>
+                Become the Ultimate Business owner. Business Growth
+                Secrets - The Ultimate 3-Day Business Event With
+                Forbes Coaches Council Member And Business Coach Adam
+                Stott, Big Business Events Head Coach Ross Temple, And
+                Special Guests. Adam will share his 9-step system for
+                business success which has been formulated from his
+                experience in business since 2008. Click Learn More
+                for full details on this amazing event.
+              </p>
+            </div>
+            <div class="text-white biz-btn">
+              <button>LEARN MORE</button>
+            </div>
+          </div>
+        </div>
+        <div class="border">
+          <div class="business-card s5">
+            <div></div>
+
+            <div class="bis-h">
+              <h3 class="text-center my-3">
+                <strong>WRITING</strong><br />
+                <span>PODCAST</span>
+              </h3>
+            </div>
+            <div class="bis-p">
+              <p>
+                Listen to Adam in conversation with prominent business
+                figures and celebrities and get advice on how to grow
+                your business on his weekly Business Growth Secrets
+                podcast - created to support the business community.
+                Not to miss guests episodes include Sarah Willingham,
+                Tej Lalvani (Dragons Den) Kaye Adams, Charlie Mullins,
+                John Caudwell, Paul C Brunson (Celebs Go Dating /
+                Married at First Sight) Tim Campbell (BBC The
+                Apprentice) Andy Triggs-Hodge (Olympic Rowing
+                Champion), Mr. Motivator, Alex Murphy (Dancing on Ice)
+                and Sian Gabbidon (BBC The Apprentice).
+              </p>
+            </div>
+            <div class="mb-4 text-white biz-btn">
+              <button>START LISTENING</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="writer-quote">
+      <div class="quote-box">
+        <h4>
+          Whether you are starting out, starting over or starting to
+          make changes for better results, the key thing is to start.
+          If you fail to start, you’re already finished.
+        </h4>
+      </div>
+      <h5 class="text-center">
+        CHARLES C - WRITING COACH<br />
+        IT ALL STARTS HERE!
+      </h5>
+      <div
+        class="d-flex justify-content-center my-5 forbes-coach-img"
+      >
+        <img
+          src="/charlesC/Images/forbes-coach.png"
+          alt="forbes coach"
+        />
+      </div>
+    </div>
+    <div class="footer-main-box d-flex justify-content-center">
+      <div
+        class="container d-flex footer-box justify-content-between mx-5"
+      >
+        <div class="footer-content-1 d-flex justify-content-between">
+          <p>Privacy Policy</p>
+          <p>Terms and conditions</p>
+        </div>
+
+        <div class="footer-content-2 d-flex justify-content-center">
+          <p>© 2024 Charles C</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
