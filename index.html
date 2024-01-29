@@ -47,11 +47,26 @@
         padding: 0;
         box-sizing: border-box;
       }
+
+      .navbar {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1000; /* Set the background color of the navbar to transparent */
+      }
+      .nav-bar-container {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
       .nav-link {
         letter-spacing: 0.11em;
         /* padding: 8px 9px; */
         font-family: 'Roboto', sans-serif;
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 600;
         line-height: 1.4;
         text-transform: uppercase;
@@ -65,17 +80,11 @@
         color: #0a0a0a !important;
       }
 
-      .navbar {
-        position: fixed;
-        top: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 1000;
-        background-color: transparent; /* Set the background color of the navbar to transparent */
-      }
       .nav-linkz {
         justify-content: end;
-        margin-right: 30px;
+      }
+      .navbar-nav {
+        width: 900px;
       }
       .writer-page-box {
         height: 100vh;
@@ -402,12 +411,7 @@
         width: 25%;
         font-size: 12px;
       }
-      @media (min-width: 768px) {
-        .navbar {
-          width: 75%;
-          height: 90px; /* Adjusted width for md and larger screens */
-        }
-      }
+
       @media (min-width: 1200px) {
         .writer-skills-box {
           width: 70%;
@@ -425,6 +429,12 @@
       }
 
       @media (max-width: 768px) {
+        .nav-bar-container {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
         .nav-link {
           letter-spacing: 0.11em;
           padding: 15px 9px;
@@ -433,6 +443,12 @@
           font-weight: 500;
           line-height: 1.4;
           text-transform: uppercase;
+        }
+        .navbar-nav {
+          width: 100%;
+        }
+        .writer-page-box {
+          width: 100%;
         }
         .writer-skills-box {
           min-width: 100%;
@@ -520,20 +536,24 @@
   </head>
   <body>
     <div class="bg-white">
-      <div class="nav-bar-container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-white">
-          <a class="navbar-brand" href="#">Charles C</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="nav-bar-container">
+          <div
+            class="w-100 d-flex justify-content-between align-items-center"
           >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+            <a class="navbar-brand" href="#">Charles C</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
 
           <div
             class="collapse navbar-collapse nav-linkz"
@@ -566,8 +586,8 @@
               </li>
             </ul>
           </div>
-        </nav>
-      </div>
+        </div>
+      </nav>
     </div>
     <div class="writer-page-box"></div>
     <div class="bg-white">
@@ -649,11 +669,9 @@
                 EPISODE 330: FIVE STEPS TO MAKE £10,000 PER MONTH
                 QUICKLY
               </h5>
+              <p class="card-text">By Charles C | January 17, 2024</p>
               <p class="card-text">
-                By Adam Stott | January 17, 2024
-              </p>
-              <p class="card-text">
-                In this episode, Adam Stott shares his five-step
+                In this episode, Charles C shares his five-step
                 process for making £10,000...
               </p>
             </div>
